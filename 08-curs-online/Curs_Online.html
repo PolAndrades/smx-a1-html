@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    <h1> Inscripció al Curs Online de SMX </h1>
+</header>
+
+<main>
+    <form action="" method="get"></form>
+</main>
+
+<fieldset>
+
+    <legend>Dades personals</legend>
+    <label for="Nom">Nom complet</label>
+    <input type="Nom" name="Nom" id="Nom">
+    <input type="submit" value="Enter">
+    <br>
+    <label for="Email">Correu Electronic</label>
+    <input type="email" id="email" name="correu" placeholder="exemple@domini.cat">    <input type="submit" value="Enter">
+    <br>
+    <label for="Telefon">Telefon</label>
+    <input type="tel" id="telefon" name="telefon" pattern="[6-7]{1}[0-9]{8}" placeholder="600332211">    <input type="submit" value="Enter">
+    <br>
+    <label for="Data">Data de Naixement</label>
+    <input type="date" name="date" id="date">
+    <input type="submit" value="Enter">
+
+</fieldset>
+
+<fieldset>
+    
+    <legend>Tipus de Curs i Experiència prèvia</legend>
+    <label for="Curs">Selecciona els cursos</label>
+    <br>
+    <label><input type="checkbox" name="opcioProgramacióBasica" checked> Programació Basica</label>
+    <br>
+    <label><input type="checkbox" name="opcioAdministraciódesistemas"> Administració de Sistemes</label>
+    <br>
+    <label><input type="checkbox" name="opcioDesenvolupamentdeVideojocs" checked> Desenvolupament de Videojocs</label>
+    <br>
+    <label><input type="checkbox" name="opcioDesenvolupamentWeb"> Desenvolupament Web</label>
+    <br>
+    <br>
+    <label for="Experiencia Previa">Experiencia Previa</label> 
+    <br>
+    <label for="Radio">Radio:</label>
+    <label><input type="radio" name="Experiencia" value="Novell"> Novell</label>
+    <label><input type="radio" name="Experiencia" value="Intermedi"> Intermedi</label>
+    <label><input type="radio" name="Experiencia" value="Avançat"> Avançat</label>
+
+    
+
+
+</fieldset>
+
+<fieldset>
+
+    <legend>Interessos i motivació del curs</legend>
+    <input type="checkbox" name="interessos" value="projectes" /> Projectes pràctics
+        </label>
+        <br />
+        <label>
+            <input type="checkbox" name="interessos" value="tutories" /> Tutories online
+        </label>
+        <br />
+        <label>
+        <input type="checkbox" name="interessos" value="certificats" /> Certificats
+        </label>
+        <br />
+        <label>
+        Explica per què vols fer el curs:
+        <br />
+        <textarea name="motivacio" required minlength="20" maxlength="200" rows="4" cols="50" placeholder="Explicació breu..."></textarea>
+        </label>
+        <br />
+        <label>
+</fieldset>
+
+
+<fieldset>
+    <legend>Fitxer i acceptació de condicions</legend>
+Adjunta el teu CV (PDF):
+                    <input type="file" name="cv" accept=".pdf" required />
+                </label>
+                <br />
+                <label>
+                    <input type="checkbox" name="acceptar" required /> Accepto les condicions del curs
+                </label>
+            </fieldset>
+
+            
+            <br />
+            <button type="submit">Enviar inscripció</button>
+        </form>
+    </main>
+
+</fieldset>
+
+<footer>
+        <p>&copy; 2025 - Inscripcions Curs Online. Contacte: pol_andradessala@iescarlesvallbona.cat | <a href="#">Suport</a></p>
+    </footer>
+</body>
+</html>
