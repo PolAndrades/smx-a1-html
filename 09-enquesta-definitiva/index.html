@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8" />
+<title>Enquesta Definitiva de Superherois</title>
+</head>
+<body>
+<header>
+    <h1>Enquesta Definitiva dels Superherois</h1>
+</header>
+
+<form action="#" method="POST" enctype="multipart/form-data">
+
+<fieldset>
+
+<label>
+    Nom del superheroi:
+    <input type="text" name="nom_superheroi" required minlength="3" maxlength="50" />
+</label>
+<br />
+
+<label>
+    Correu de contacte (representant):
+    <input type="email" name="email" required />
+</label>
+<br />
+
+<label>
+    Clau secreta per accedir a la "headquarters":
+    <input type="password" name="clau" required minlength="6" maxlength="20" />
+</label>
+<br />
+
+<label>
+    Nombre de batalles aquest any:
+    <input type="number" name="batalles" required min="0" max="100" />
+</label>
+<br />
+
+<label>
+    Nivell de poder actual (1 a 100):
+    <input type="range" name="poder" min="1" max="100" required />
+</label>
+<br />
+
+<label>
+    Data de la primera aparició:
+    <input type="date" name="primera_aparicio" required />
+</label>
+<br />
+
+<label>
+    Hora disponible per reunions:
+    <input type="time" name="reunio" required />
+</label>
+<br />
+
+<label>
+    Color principal del vestit:
+    <input type="color" name="color" required />
+</label>
+<br />
+
+<label>
+    Pàgina web oficial:
+    <input type="url" name="web" required />
+</label>
+<br />
+
+<label>
+    Telèfon d'emergències:
+    <input type="tel" name="telefon" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Format: 123-456-7890" required />
+</label>
+</fieldset>
+
+
+<fieldset>
+<legend>Tipus i superpoders</legend>
+
+<p>Tipus: </p>
+<label><input type="radio" name="tipus" value="heroi" required /> Heroi</label>
+<label><input type="radio" name="tipus" value="ajudant" /> Ajudant</label>
+<label><input type="radio" name="tipus" value="malvat" /> Malvat</label>
+
+<p>Superpoders (pujarà al teu repertori):</p>
+<label><input type="checkbox" name="superpoders" value="volar" /> Volar</label>
+<label><input type="checkbox" name="superpoders" value="invisibilitat" /> Invisibilitat</label>
+<label><input type="checkbox" name="superpoders" value="superforça" /> Superforça</label>
+<label><input type="checkbox" name="superpoders" value="reativitat" /> Reacitivitat</label>
+</fieldset>
+
+
+<fieldset>
+<legend>Univers d'origen</legend>
+<label>
+    Tria el teu univers:
+    <select name="univers" required>
+    <option value="">--Selecciona--</option>
+    <option value="marvel">Marvel</option>
+    <option value="dc">DC</option>
+    <option value="manga">Manga</option>
+    <option value="altres">Altres</option>
+    </select>
+</label>
+</fieldset>
+
+
+<fieldset>
+<legend>Preguntes Temàtiques 1</legend>
+<p>1. Quin és el teu enemic preferit?</p>
+<label><input type="radio" name="enemic" value="lex_luthor" required /> Lex Luthor</label>
+<label><input type="radio" name="enemic" value="joker" /> Joker</label>
+<label><input type="radio" name="enemic" value="thanos" /> Thanos</label>
+<label><input type="radio" name="enemic" value="lex_luthor" /> L'altre: <input type="text" name="enemic_altre" maxlength="50" /> </label>
+
+<p>2. Quin seria el teu gadget ideal?</p>
+<label><input type="radio" name="gadget" value="batmobile" required /> Batmobile</label>
+<label><input type="radio" name="gadget" value="llançavent" /> Lançavent</label>
+<label><input type="radio" name="gadget" value="x-ray" /> Ray X</label>
+<label><input type="radio" name="gadget" value="altre" /> Altre: <input type="text" name="gadget_altre" maxlength="50" /> </label>
+</fieldset>
+
+
+<fieldset>
+<legend>Preguntes Temàtiques 2</legend>
+<p>3. Amb quin superheroi mai faries equip?</p>
+<label><input type="radio" name="company" value="superman" required /> Superman</label>
+<label><input type="radio" name="company" value="batman" /> Batman</label>
+<label><input type="radio" name="company" value="wonder_woman" /> Wonder Woman</label>
+<label><input type="radio" name="company" value="flash" /> Flash</label>
+
+<p>4. Quina és la teva motivació principal per ser superheroi?</p>
+<label><input type="radio" name="motivacio_super" value="justicia" required /> Justícia</label>
+<label><input type="radio" name="motivacio_super" value="proteccio" /> Protecció</label>
+<label><input type="radio" name="motivacio_super" value="glòria" /> Glòria</label>
+<label><input type="radio" name="motivacio_super" value="divertir-se" /> Divertir-se</label>
+</fieldset>
+
+
+<fieldset>
+<legend>Altres preguntes</legend>
+<p>5. Quina és la teva arma preferida?</p>
+<label><input type="radio" name="arma" value="escut" required /> Escut</label>
+<label><input type="radio" name="arma" value="espasa" /> Espasa</label>
+<label><input type="radio" name="arma" value="pistola" /> Pistola</label>
+<label><input type="radio" name="arma" value="altres" /> Altres: <input type="text" name="arma_altre" maxlength="50" /> </label>
+
+<p>6. Quin és el teu enemic preferit?</p>
+<label><input type="radio" name="enemic" value="lex_luthor2" /> Lex Luthor</label>
+<label><input type="radio" name="enemic" value="joker2" /> Joker</label>
+<label><input type="radio" name="enemic" value="thanos2" /> Thanos</label>
+<label><input type="radio" name="enemic" value="altres" /> Altres: <input type="text" name="enemic_altre" maxlength="50" /> </label>
+
+<p>7. Quina seria la teva ciutat ideal per viure com a superheroi?</p>
+<input type="text" name="ciutat" required minlength="3" maxlength="50" />
+
+<p>8. Quina qualitat consideres més important en un superheroi?</p>
+<label><input type="radio" name="qualitat" value="valor" required /> Valor</label>
+<label><input type="radio" name="qualitat" value="intel·ligencia" /> Intel·ligència</label>
+<label><input type="radio" name="qualitat" value="força" /> Força</label>
+<label><input type="radio" name="qualitat" value="compassió" /> Compassió</label>
+
+<p>9. Quina és la teva pel·lícula de superherois preferida?</p>
+<input type="text" name="pelicula" required minlength="3" maxlength="50" />
+
+<p>10. Quina història de superheroi t’agrada més?</p>
+<label><input type="radio" name="historia" value="origens" required /> Orígens</label>
+<label><input type="radio" name="historia" value="batalles" /> Batalles èpiques</label>
+<label><input type="radio" name="historia" value="redempcio" /> Redempció</label>
+</fieldset>
+
+
+<br />
+<button type="submit">Envia la teva resposta</button>
+
+</form>
+
+<footer>
+<p>&copy; 2025 - Enquesta Èpica de Superherois. Contacte: pol_andradessala@iescarlesvallbona.cat</p>
+</footer>
+</body>
+</html>
