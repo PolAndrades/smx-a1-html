@@ -37,15 +37,14 @@ header {
 
 /* Imatge de perfil */
 header img {
-  
-    width: 150px;
+  width: 150px;
     height: 150px;
-    margin: block;
+    border-radius: 50%; 
+    border: 4px solid #93c5fd; 
     object-fit: cover;
-  box-shadow: 0 0 15px 3px steelblue;
-  background-color: lightblue;
-  border-radius: 50%
-  
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(avatar.webp);
 }
 
 /* Nom principal */
@@ -60,6 +59,7 @@ header img {
   font-size: 500;
   margin-bottom: 10px; 
   color: #3498db;
+  
 }
 
 /* Descripció breu */
@@ -69,7 +69,7 @@ header p {
   font-size: 0.95rem;
   opacity: 0.9;
   line-height: 1.6;
-  
+  padding: 0.2rem;  
 }
 
 /* ============================================
@@ -83,17 +83,18 @@ main {
           SECCIONS GENERALS
 ============================================ */
 section.seccio {
-  padding: 40px 30px;
-  border-bottom: 1px solid #eee;
-  
+  padding: 2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.01rem
 }
 
 /* Títols de secció */
 section.seccio > h2 {
   font-size: 1.6rem;
-  color: 3498db;
-  margin-bottom: 15px;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
   position: relative;
+  border-bottom: 2px solid #cbd5e1;
 }
 
 
@@ -102,17 +103,14 @@ section.seccio > h2 {
           SECCIÓ - SOBRE MI
 ============================================ */
 section.sobre-mi p {
-
-  margin-bottom: 15px;
   font-size: 1rem;
-  line-height: 1.7;
+  margin-bottom: 1.2rem
 }
 
 /* ============================================
           HABILITATS
 ============================================ */
 ul.habilitats-llista {
-
 list-style: none;
 display: flex;
 flex-direction: column;
@@ -134,9 +132,9 @@ ul.habilitats-llista li {
 
 /* Classes específiques per nivell */
 ul.habilitats-llista li.nivell-expert {
-background: #d8ecff;
+  background: #d8ecff;
   border-left-color: #1a73e8;
-
+  
 }
 
 ul.habilitats-llista li.nivell-expert strong {  
@@ -160,12 +158,12 @@ ul.habilitats-llista li.nivell-basic {
 
   background: #f6f9fc;
   border-left-color: #a3c8f5;
-  color: #6b8bb1;
+
 
 }
 
 ul.habilitats-llista li.nivell-basic strong {
-  color: #7da3d1;
+
 }
 
 /* ============================================
@@ -187,32 +185,37 @@ article.projecte > h3 {
   color #2563eb;
   margin-bottom: 15px;
   padding-bottom: 8px;
-  text-align: center
+  text-align: center;
 
 }
 
 /* Imatges de projectes */
 article.projecte img {
   width: 100%;
-  max-width: 400px;
   height: auto;
-  border-radius: 8px;
   
 }
 
 /* Selector d'atribut - Enllaços amb href */
 article.projecte a[href] {
-  color: #3498db;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 02s ease;
-
+  display: inline-block;
+    background-color:#1e293b;
+    color: #ffffff;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    margin: 0.1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 /* Paràgrafs dins de projectes */
 article.projecte p {
-  margin-bottom: 10px;
-  line-height: 1.6;
+  padding: 0 1rem;
+  margin-top: 0;
+  color: #64748b;
+  font-size: 0.9rem;
 }
 
 article.projecte p strong {
@@ -223,12 +226,14 @@ article.projecte p strong {
           EXPERIÈNCIA I FORMACIÓ
 ============================================ */
 div.experiencia-item {
-  background: #ffffff;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 4px solid #3498db;
-
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    border-left: 10px solid #2563eb;
+    border-right: 10px solid #2563eb;
+    border-top: 4px solid #93c5fd;
+    border-bottom: 4px solid #93c5fd;
+    font-weight: 0,3rem;
+    border-radius: 0.3rem;
 }
 
 /* Títols dels contenidors d'experiència */
@@ -272,7 +277,6 @@ footer.contacte {
 footer.contacte h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  
 }
 
 footer.contacte > p {
@@ -299,19 +303,32 @@ footer.contacte .info-contacte span {
 }
 
 footer.contacte .info-contacte span {
-
+  padding: 1rem;
 }
 
 footer.contacte .info-contacte a[href] {
+
 }
 
 /* Selector d'atribut específic - Email */
 footer.contacte a[href^='mailto:'] {
-  font-weight: 500;
-
+  font-weight: bold;
+  color: #3498db;
+  border: solid 2px #3498db;
+  border-radius: #2563eb solid 1px;
+  font-weight: bold;
+  padding: 0.6rem;
+  background-color:rgba(52, 152, 219, 0.1);
+  border-radius: 0.3rem;
 }
 
 /* Selector d'atribut específic - Telèfon */
 footer.contacte a[href^='tel:'] {
-  font-weight: 500
+  font-weight: 500;
+  border-radius: 0.3rem;
+  border: solid #1e293b 2px;
+  color: #1e293b;
+  font-weight: bold;
+  padding: 0.6rem;
+  background-color: rgba(30, 41, 59, 0.1);
 }
