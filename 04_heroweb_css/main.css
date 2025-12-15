@@ -1,0 +1,262 @@
+/* ============================================
+RESET I BASE
+============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a202c;
+  line-height: 1.6;
+  background-color: #f7fafc;
+}
+img{
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* ============================================
+MENÚ NAVIGATION STICKY
+============================================ */
+header{
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+header nav{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header nav a{
+  text-decoration: none;
+  color: white;
+}
+
+header nav a img{
+  width: 3rem;
+  filter: invert(100%);
+  vertical-align: bottom;
+}
+
+.logo span{
+  font-size: 2.5rem;
+}
+
+.nav-menu{
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.nav-menu li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 0.25rem;
+}
+
+.nav-menu li a{
+  text-decoration: none;
+  border: solid 1px white;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 4px;
+}
+
+
+/* ============================================
+HERO SECTION AMB PARALLAX
+============================================ */
+
+.hero {
+  height: 90vh;
+  background-image: url(hero-section.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero-content{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: whitesmoke;
+  box-shadow: 1px solid black;
+  padding-top: 15rem;
+  font-size: 100%;
+}
+.hero-content h1{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.hero-content p{
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+}
+.btn-glass{
+  border-radius: 2rem;
+  color: white;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+/* ============================================
+SECCIÓ DESTINACIONS POPULARS
+============================================ */
+
+.section-title{
+text-align: center;
+margin-top: 0.1rem;
+margin-bottom: 2rem;
+}
+.section-title h2{
+  font-size: 2.5rem;
+  margin: 0.3rem;
+}
+
+.section-description{
+  margin: 1rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #4a5568;
+}
+
+.travel-card {
+  display: inline-block;
+  width: 29%;
+  margin: 2%;
+  text-align: left;
+  border: 12px;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px;
+  padding-bottom: 1rem;
+}
+
+.travel-card h3{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.travel-card img{
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.card-container{
+  padding: 1rem;
+}
+.card-content{
+  padding: 1rem;
+
+}
+.article{
+  display: inline-block;
+  text-align: center;
+  border: 12px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  border: 12px;
+}
+
+.card-price{
+  color: #1abc9c;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-card{
+  background-color: #3498db;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  color: #ffffff;
+  border-radius: 10%;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+
+/* ============================================
+OFERTES DESTACADES
+============================================ */
+
+.featured-card{
+  display: inline-block;
+  width: 22%;
+  margin: 1%;
+  text-align: left;
+  border: 12px;
+  background: #ffffff;
+  border-radius: 5%;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px;
+  padding-bottom: 1rem;
+}
+
+.featured-badge{
+  text-align: center;
+  background-color: #e74c3c ;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-decoration: solid;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+.featured-content{
+  padding: 2rem;
+}
+.featured-price{
+  color: #c0392b;
+  text-decoration: line-through;
+  font-weight: 900;
+  font-size: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.featured-price-new{
+  color: #1abc9c;
+  font-size: 150%;
+}
+
+/* ============================================
+FOOTER
+============================================ */
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(135deg, #1a202c, #2d3748);
+}
+footer p{
+  margin-top: 0.5rem;
+  color: #f7fafc;
+  font-size: 13.5px;
+}
+footer h3{
+  color: #1abc9c;
+  font-size: 35px;
+}
