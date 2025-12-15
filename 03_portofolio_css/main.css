@@ -132,51 +132,48 @@ ul.habilitats-llista li {
 
 /* Classes específiques per nivell */
 ul.habilitats-llista li.nivell-expert {
-  background: #d8ecff;
-  border-left-color: #1a73e8;
-  
+  background: rgba(52, 152, 219, 0.3);
+  border-left-color: #7bb3f2;
+
 }
 
 ul.habilitats-llista li.nivell-expert strong {  
-  background: #eaf5ff;
   border-left-color: #7bb3f2;
+  color: #2563eb;
 }
 
 
 .habilitats-llista li.nivell-intermig {
-  background: #eaf5ff;
   border-left-color: #7bb3f2;
+  background: rgba(52, 152, 219, 0.2);
+
 }
 
 ul.habilitats-llista li.nivell-intermig strong {
-  background: #eaf5ff;
   border-left-color: #7bb3f2;
-
+  color:#3498db ;
 }
 
 ul.habilitats-llista li.nivell-basic {
-
-  background: #f6f9fc;
-  border-left-color: #a3c8f5;
-
-
+  border-left-color: #7bb3f2;
+  background: rgba(52, 152, 219, 0.1);
 }
 
 ul.habilitats-llista li.nivell-basic strong {
-
+color:#93c5fd ;
 }
 
 /* ============================================
             PROJECTES
 ============================================ */
 article.projecte {
-  background: #ffffff;
-  border-radius: 10px;
-  padding: 25px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 8px ;
-    border-bottom: 6px solid #3498db;
-      border-right: 6px solid #3498db;
+  background: #ffffff; 
+  border-radius: 10px; 
+  padding: 25px; 
+  margin-bottom: 30px; 
+  box-shadow: 0 2px 8px ; 
+    border-bottom: 6px solid #3498db; 
+      border-right: 6px solid #3498db; 
 }
 
 /* Selector fill directe - Títol de projecte */
@@ -205,7 +202,6 @@ article.projecte a[href] {
     border-radius: 0.3rem;
     margin: 0.1rem;
     font-size: 0.9rem;
-    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -228,12 +224,12 @@ article.projecte p strong {
 div.experiencia-item {
     padding-left: 1rem;
     margin-bottom: 2rem;
-    border-left: 10px solid #2563eb;
-    border-right: 10px solid #2563eb;
+    border-left: 10px solid #3498db;
+    border-right: 10px solid #3498db;
     border-top: 4px solid #93c5fd;
     border-bottom: 4px solid #93c5fd;
     font-weight: 0,3rem;
-    border-radius: 0.3rem;
+    border-radius: 16px;
 }
 
 /* Títols dels contenidors d'experiència */
@@ -261,7 +257,6 @@ div.experiencia-item em {
 /* Selector germà general - Tots els paràgrafs després de l'empresa */
 div.empresa ~ p {
   line-height: 1.6;
-
 }
 
 /* ============================================
@@ -307,7 +302,7 @@ footer.contacte .info-contacte span {
 }
 
 footer.contacte .info-contacte a[href] {
-
+margin: 0.1rem;
 }
 
 /* Selector d'atribut específic - Email */
